@@ -28,11 +28,13 @@ public class main {
         int b = iScanner.nextInt();
         iScanner.close();
 
-        if (b == 0) {
+        if (a == 0 && b == 0) {
+            System.out.println("Число " + a + " в нулевой степени = не определено");
+        } else if (b == 0) {
             System.out.println("Число " + a + " в нулевой степени = 1");
         } else if (b == 1) {
             System.out.println("Число " + a + " ^ " + b + " = " + a + " ");
-        } else {
+        }else {
             double c = a;
             for (int i = 1; i < Math.abs(b); i++) {
                 c = c * a;
